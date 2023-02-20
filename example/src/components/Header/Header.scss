@@ -1,0 +1,31 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/_mixins.scss';
+
+.download {
+    @include center;
+    flex-direction: column;
+    background: $lightGrey;
+
+    &__heading {
+        margin: 5rem 0 1rem 0;
+    }
+
+    p {
+        max-width: 30rem;
+    }
+
+    &__link {
+        margin: 2rem 0;
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            background: $black;
+            color: $white;
+            margin: 0.5rem;
+            padding: 0.5rem 0.75rem;
+            text-decoration: none;
+            border-radius: $radius;
+        }
+    }
+}

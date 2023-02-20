@@ -1,0 +1,26 @@
+@import './scss/variables';
+@import './scss/mixins';
+@import './scss/typography';
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.products {
+  max-width: 1000px;
+  margin: 0 auto;
+  @include layout-grid(mobile);
+
+    &__heading {
+      grid-column: auto / span 4;
+      text-align: center;
+      margin: 3rem 0;
+
+      @media only screen and (max-width: 480px) {
+          grid-column: auto / span 1;
+      }
+  }
+}
